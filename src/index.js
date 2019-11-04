@@ -14,6 +14,10 @@ function createStore(reducer){
     return state;
   }
 
+  function dispatch(action){
+    state = reducer(action)
+  }
+
 }
 
 
