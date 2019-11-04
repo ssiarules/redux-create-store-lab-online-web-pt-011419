@@ -25,6 +25,7 @@ function candyReducer(state = [], action) {
     default:
       return state;
   }
+};
 
 
 function render() {
