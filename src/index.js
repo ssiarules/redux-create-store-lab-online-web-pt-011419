@@ -1,13 +1,19 @@
 // write your createStore function here
+function createStore(reducer){
 
-function candyReducer(state = [], action) {
-  switch (action.type) {
-    case 'ADD_CANDY':
-      return [...state, action.candy];
-    default:
-      return state;
+  function candyReducer(state = [], action) {
+    switch (action.type) {
+      case 'ADD_CANDY':
+        return [...state, action.candy];
+      default:
+        return state;
+    }
   }
+  
 }
+
+
+
 
 function render() {
   let container = document.getElementById('container');
