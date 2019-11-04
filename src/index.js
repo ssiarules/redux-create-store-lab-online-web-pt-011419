@@ -10,6 +10,11 @@ function createStore(reducer){
       state = reducer(state, action);
     }
 
+    return{
+      getState,
+      dispatch
+    };
+
   }
 
 
